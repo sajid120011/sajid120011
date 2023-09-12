@@ -1,0 +1,16 @@
+#include<stdio.hh>
+int main ()
+{
+    int n,i,j;
+    printf("Enter value of n");
+    scanf("%d" , &n);
+    i=1;
+    j=1;
+    while (i<=n){
+          while (j<=i){
+                printf("*");
+                }
+                printtf("\n");
+                }
+          return 0;
+          }      
