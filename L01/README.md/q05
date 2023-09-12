@@ -1,0 +1,31 @@
+#include,stdio.h>
+int main()
+{
+    int d1,m1,y1;
+    int d2,m2,y2;
+   int olderPerson;
+    printf("Enter date of birth of person 1");
+    scanf("%d",&d1);
+    scanf("%d",&m1);
+    scanf("%d",&y1);
+    printf("Enter date of birth of person 2");
+    scanf("%d",&d2);
+    scanf("%d",&m2);
+    scanf("%d",&y2);
+    while (y1==y2||m1==m2||d1==d2){
+          olderPerson=0;
+          printf("Both have same age");
+          break;
+          }
+          while (y1>y2||(m1>m2&&y1==y2)||(d1>d2&&m1==m2&&y1==y2)){
+          olderPerson=2;
+          printf("Person 2 is older");
+          break;
+          }
+          while (y1<y2||(m1<m2&&y1==y2)||(d1<d2&&m1==m2&&y1==y2)){
+          olderPerson=1;
+          printf("person 1 is older");
+          break;
+          }
+    return 0;
+}          
