@@ -1,0 +1,52 @@
+#include<stdio.h>
+int main()
+{
+     int n,i,j,k;
+     printf("Enter value of n");
+     scanf("%d",&n);
+     do {
+         int j=1;
+         do {
+             printf(" ");
+             j=j+1;
+             } while (j<=n-i);
+             int k=1;
+             printf("*");
+             if(i>1){
+                     do {
+                         printf(" ");
+                         k=k+1;
+                         } while (k<2*i-2);
+                         if(i!=n) {
+                          printf("*");
+                          }
+                          }
+                          printf("\n");
+                          i=i+1;
+                          } while (i<=n);
+                          i=n-1;
+                          do{
+                                int j=1;
+                                do{
+                                    printf(" ");
+                                    j=j+1;
+                                    } while (j<=n-i);
+                                    int k=1;
+                                    printf("*");
+                                    if(i>1){
+                                            do{
+                                                printf(" ");
+                                                k=k+1;
+                                                } while (k<2*i-2);
+                                                if(i!=n) {
+                                                         printf("*");
+                                                         }
+                                                         }
+                                                         printf("\n");
+                                                         i--;
+                                                         }while(i>=1);
+     return 0;
+}                                                         
+                                                         
+                          
+// i made this uing one of my freinds help
