@@ -199,7 +199,7 @@ int main()
         printf("Set brightness to high\n");
      } 
 	else if (Intensity >= 100 && Intensity <= 500)
-	 {
+	  
         printf("Set brightness to medium\n");
      }
 	 else if (Intensity >= 0 && Intensity < 100)
