@@ -127,35 +127,12 @@ int main()
     return 0;
 }
 
-# Problem 06
-
-#include <stdio.h>
-int main()
-{
-     char number; 
-    printf("Enter an 8-bit number: ");
-    scanf("%c", &number);
-    if (number & (1 << 3) && number & (1 << 6))
-	 {
-        number &= ~(1 << 3); 
-        number &= ~(1 << 6); 
-        printf("The 4th and 7th bits were turned off");
-     } 
-	else
-	 {
-        printf("The 4th and/or 7th bits were not set");
-     }
-    printf("The modified number is: %u\n", number);
-
-    return 0;
-}
-
 # Problem 07
 
 #include <stdio.h>
 int main() 
 {
-    double costOfShopping, discount,amountAfterDiscount,savedAmount;
+    float costOfShopping, discount,amountAfterDiscount,savedAmount;
     printf("Enter the cost of shopping: ");
     scanf("%f", &costOfShopping);
     if (costOfShopping > 6000) 
@@ -212,5 +189,41 @@ int main()
       }
     return 0;
 }
+
+# Program 09
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int a,b,c;
+	float discriminant,root1,root2;
+	printf("Enter value of a");
+	scanf("%d",&a);
+	printf("Enetr value of b");
+	scanf("%d",&b);
+	printf("Enetr value of c");
+	scanf("%d",&c);
+	discriminant=(b*b)-(4*a*c);
+	printf("discriminant is= %f\n",discriminant);
+	root1=(-b+sqrt(discriminant))/(2*a);
+	printf("root 1 is %f\n",root1);
+	root2=(-b-sqrt(discriminant))/(2*a);
+	printf("root2 is %f\n",root2);
+	if(discriminant>0)
+	{
+		printf("Roots are real");
+	}
+    else if(discriminant<0)
+    {
+    	printf("Complex roots");
+	}
+	else 
+	{
+		printf("One and only one real root ");
+	}
+	return 0;
+}
+
 
 
