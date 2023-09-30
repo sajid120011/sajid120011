@@ -149,7 +149,7 @@ int main()
      } 
 	else if (costOfShopping > 1999)
 	 {
-        discount = 0.5; 
+        discount = 0.1; 
      } 
 	else 
 	 {
